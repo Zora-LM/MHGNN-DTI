@@ -56,7 +56,7 @@ def get_adj(dti):
     dpp_adj = np.zeros((len_dti, len_dti), dtype=int)
     for i, dpp1 in enumerate(dti):
         for j, dpp2 in enumerate(dti):
-            if (dpp1[0] == dpp1[0]) | (dpp1[1] == dpp1[1]):
+            if (dpp1[0] == dpp2[0]) | (dpp1[1] == dpp2[1]):
                 dpp_adj[i][j] = 1
     return dpp_adj
 
